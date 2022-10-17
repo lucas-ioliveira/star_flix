@@ -1,0 +1,132 @@
+/*Reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*variáveis*/
+:root{
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+
+/*body*/
+body{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+    color: white;
+}
+
+.container{
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+/*Container*/
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filme_principal .container{
+    width: 70%;
+}
+
+/*Logo*/
+header .logo{
+    color: var(--vermelho);
+    font-family: "Arial Black", Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+/*Navegação*/
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+    
+}
+
+/*Filme principal*/
+.filme_principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("/img/capa.jpg");
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme_principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme_principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botoes{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.assista{
+    text-decoration: none;
+    background-color: rgba(209, 7, 7, 0.897);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.assista:hover{
+    background-color: white;
+    color: black;
+}
+
+.fa-solid fa-play{
+    margin-left: 15px;
+}
+/*Carrosel*/
+
+.box_filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.carrosel_filmes{
+    margin-top: 5px;
+}
+
+/*rodapé*/
+footer{
+    background: var(--preto);
+    font-family: 'Arial', Times, serif;
+}
+.rodape{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
